@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Realtime YOLOv8 TACO - Garbage Detection</title>
+    <style>
+      body { font-family: Arial, sans-serif; text-align:center; background:#111; color:#eee; }
+      img { border: 4px solid #333; margin-top: 10px; }
+      .container { max-width: 900px; margin: auto; padding: 20px; }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Realtime Garbage Detection (YOLOv8 TACO)</h1>
+    <p>Streaming camera with YOLOv8 inference</p>
+    <img src="{% url 'camera_feed' %}" width="800" height="600" alt="camera feed">
+    <p>Confidence threshold & model size có thể chỉnh trong <code>yolo_camera.py</code></p>
+  </div>
+</body>
+</html>
